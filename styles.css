@@ -1,0 +1,201 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  } 
+   
+  body{ 
+    min-height: 100vh; 
+    font-family: fantasy; 
+  } 
+   
+  nav { 
+    background-color: white; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); 
+  } 
+   
+  nav ul { 
+    width: 100%; 
+    list-style: none; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+  } 
+   
+  nav li { 
+    height: 50px; 
+  } 
+   
+  nav a  { 
+    height: 100%; 
+    padding: 0 30px; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    color: black; 
+  } 
+   
+  nav a:hover{ 
+    border: #f0f0f0; 
+  } 
+   
+  nav li:first-child{ 
+    margin-right: auto; 
+  } 
+   
+  nav ul li a:hover { 
+    color: #4198d2; /* Color when hovered (change to your desired color) */ 
+  } 
+   
+  .illustration { 
+    display: flex; /* Use flexbox for positioning */ 
+    justify-content: flex-end; /* Align items to the right */ 
+  } 
+   
+  .illustration img { 
+    width: 70%; /* Adjust the size (e.g., 70% of its container) */ 
+    max-width: 900px; /* Optional: set a maximum width */ 
+    height: auto; /* Maintain aspect ratio */ 
+  } 
+   
+  .intro { 
+    text-align: center; /* Center the text inside the section */ 
+    margin: 20px; /* Add some margin */ 
+    max-width: 400px; /* Set a max width for the section */ 
+  } 
+   
+  .intro h1 { 
+    font-size: 36px; /* Big font size */ 
+    font-weight: bold; /* Bold font */ 
+    margin: 10px 0; /* Space above and below */ 
+  } 
+   
+  .intro p { 
+    font-size: 24px; /* A bit smaller font size */ 
+    margin: 10px 0; /* Space above and below */ 
+  } 
+   
+  .intro button { 
+    padding: 10px 20px; /* Padding for buttons */ 
+    margin: 10px 0; /* Space between buttons */ 
+    font-size: 16px; /* Button font size */ 
+    cursor: pointer; /* Pointer cursor on hover */ 
+    border: none; /* Remove default border */ 
+    border-radius: 8px; /* Rounded corners */ 
+    background-color: #b5e8ed; /* Button background color */ 
+    color: rgb(2, 1, 1); /* Button text color */ 
+    transition: background-color 0.3s; /* Smooth transition */ 
+  } 
+   
+  .intro button:hover { 
+    background-color: #ed58e3; /* Darker shade on hover */ 
+    color: aliceblue; 
+  } 
+   
+  .intro .greeting { 
+    font-size: 16px; /* Normal font size */ 
+    margin: 10px 0; /* Space above and below */ 
+  } 
+   
+  .hero { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 100px; 
+  } 
+  .content { 
+    width: 500px; 
+    height: auto; 
+  } 
+  .about { 
+    display: flex; 
+    flex-direction: row; /* Stack children vertically */ 
+    align-items: center; /* Center items horizontally */ 
+    justify-content: space-around; /* Center items vertically */ 
+  } 
+   
+  .about h2 { 
+    font-family: monospace; /* Change to a cool font (can use Google Fonts) */ 
+    font-size: 40px; /* Adjust font size */ 
+    font-weight: 10; /* Make it not bold */ 
+    margin: 10px 0; /* Space above and below */ 
+  } 
+   
+  .about p { 
+    color: rgba(0, 0, 0, 0.7); /* Slightly gray text */ 
+    text-transform: lowercase; /* Make text lowercase */ 
+    margin: 10px 0; 
+    font-family:'Courier New', Courier, monospace; /* Space above and below */ 
+  } 
+   
+  .about button { 
+    padding: 10px 20px; /* Padding for buttons */ 
+    margin: 10px 0; /* Space above and below */ 
+    font-size: 16px; /* Button font size */ 
+    cursor: pointer; /* Pointer cursor on hover */ 
+    border: none; /* Remove default border */ 
+    border-radius: 5px; /* Rounded corners */ 
+    background-color: #b5e8ed; /* Button background color */ 
+    color: black; /* Button text color */ 
+    transition: background-color 0.3s; /* Smooth transition */ 
+  } 
+   
+  .about button:hover { 
+    background-color: #ed58e3; 
+    color: white; /* Darker shade on hover */ 
+  } 
+   
+   
+  .newillust { 
+    flex: 0 0 auto; /* Prevent the image container from growing */ 
+    margin-right: 20px; /* Space between image and text */ 
+  } 
+   
+  .newillust img { 
+    width: 500px; /* Adjust the size of the image */ 
+    height: auto; /* Maintain aspect ratio */ 
+    margin-right: 20px; /* Space between the image and text */ 
+    border-radius: 20px; 
+  } 
+   
+  .about { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Чтобы создать промежутки между элементами */ 
+  } 
+   
+  .experience { 
+    flex-basis: 100%; 
+}
+
+ 
+.services { 
+  padding: 50px; 
+  background-color: #fff; 
+  text-align: center; 
+} 
+ 
+.services h2 { 
+  font-size: 32px; 
+  margin-bottom: 20px; 
+} 
+ 
+.service-cards { 
+  display: flex;  
+  justify-content: space-around;  
+  flex-wrap: wrap; / 
+} 
+ 
+.service-card { 
+  background-color: #f4efef; 
+  padding: 20px; 
+  width: 200px; 
+  text-align: center; 
+  border-radius: 10px; 
+  margin: 10px;  
+} 
+ 
+.service-card img { 
+  max-width: 50px; 
+  margin-bottom: 10px; 
+}
